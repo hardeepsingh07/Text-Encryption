@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hardeep.kp_encrypt.encryptFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Encrypt"
+        android:id="@+id/dLabel"
+        android:layout_marginTop="20dp"
+        android:textStyle="normal"
+        android:typeface="serif"
+        android:textSize="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:id="@+id/eText"
+        android:layout_below="@+id/dLabel"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/textlayout"
+        android:hint="Enter message here.."
+        android:gravity="top"
+        android:lines="20"
+        android:maxLines="20"
+        android:padding="10dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="17dp"
+        android:textStyle="normal"
+        android:typeface="serif"
+        android:nestedScrollingEnabled="true" />
+
+    <Switch
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Manuel"
+        android:id="@+id/eSwitchSimple"
+        android:layout_marginTop="25dp"
+        android:checked="false"
+        android:textSize="17dp"
+        android:textStyle="normal"
+        android:typeface="serif"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_below="@+id/eText"
+        android:layout_alignLeft="@+id/eText"
+        android:layout_alignStart="@+id/eText"
+        android:textColor="#ffffff" />
+
+    <Switch
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Complex "
+        android:id="@+id/eSwtichComplex"
+        android:checked="false"
+        android:typeface="serif"
+        android:textStyle="normal"
+        android:textSize="17dp"
+        android:layout_alignTop="@+id/eSwitchSimple"
+        android:layout_toRightOf="@+id/eSwitchSimple"
+        android:layout_toEndOf="@+id/eSwitchSimple"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="Encrypt"
+        android:id="@+id/eButton"
+        android:background="@drawable/mybuttons"
+        android:layout_below="@+id/eSwitchSimple"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:typeface="serif"
+        android:textStyle="normal"
+        android:textSize="18dp" />
+
+
+</RelativeLayout>
